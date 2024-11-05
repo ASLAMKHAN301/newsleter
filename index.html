@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Newsletter sign-up form with success message</title>
+  </head>
+  <body class="bg-black md:bg-dark-slate-grey">
+    <div id="design"
+      class="flex justify-center items-center h-screen my-64 md:my-40"
+    >
+      <div
+        class="flex flex-col-reverse md:rounded-3xl md:flex-row md:space-x-10 md:p-5 bg-white shadow-2xl\"
+      >
+        <div class="p-5 md:pl-10 max-w-[460px] text-charcoal-grey">
+          <h1 class="font-bold text-5xl md:text-6xl pt-6 5d:pt-10">
+            Stay updated!
+          </h1>
+          <p class="text-lg pt-8 max-w-md">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="flex space-x-5 items-center max-w-[400px] mt-6">
+            <img src="images/icon-list.svg" alt="" />
+            <p class="text-lg">Product discovery and building what matters</p>
+          </div>
+          <div class="flex space-x-5 items-center max-w-[400px] mt-1">
+            <img src="images/icon-list.svg" alt="" />
+            <p class="text-lg">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="flex space-x-5 items-center max-w-[400px] mt-1">
+            <img src="images/icon-list.svg" alt="" />
+            <p class="text-lg">And much more!</p>
+          </div>
+          <div class="flex justify-between">
+            <p class="text-sm mt-10 font-bold">Email address</p>
+            <p class="error-message hidden text-sm mt-10 font-bold text-tomato-custom">Valid email is required</p>
+          </div>
+          
+
+          <input id="input"
+            type="text"
+            placeholder="email@company.com"
+            class="mt-2 border-2 w-full pl-5 py-3 rounded-lg"
+          />
+          <button id="sign-up-button"
+            class="py-4 rounded-lg bg-dark-slate-grey hover:bg-tomato-custom w-full mt-6 text-white font-semibold text-sm 
+            shadow-xl"
+          >
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+        <div>
+          <img
+            src="images/illustration-sign-up-desktop.svg"
+            alt=""
+            class="md:block hidden"
+          />
+          <img
+            src="images/illustration-sign-up-mobile.svg"
+            alt=""
+            class="block md:hidden w-full"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="success" class="hidden flex justify-center items-center h-screen shadow-2xl my-28 md:my-0">
+      <div class="md:rounded-2xl p-5 md:p-10 max-w-[300px] md:max-w-sm bg-white text-dark-slate-grey">
+        <img src="images/icon-success.svg" alt="" class="w-10 mt-24 md:mt-0" />
+        <h1 class="font-bold text-4xl pt-6">Thanks for subscribing!</h1>
+        <p class="text-xs pt-6 text-charcoal-grey">
+          A confirmation email has been sent to <span class="email font-bold">ash@loremcompany.com.</span> Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <button id="Dismiss-button"
+            class="py-3 rounded-lg bg-dark-slate-grey md:bg-tomato-custom w-full mt-44 mb-5 text-white 
+            font-semibold text-sm shadow-xl md:mt-6 md:mb-0"
+          >
+          Dismiss message
+          </button>
+      </div>
+    </div>
+    <script src="sign-up.js"></script>
+  </body>
+</html>
